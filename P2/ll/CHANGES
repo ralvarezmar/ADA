@@ -1,0 +1,92 @@
+3.2
+===
+
+2012.05.30 jcenteno
+           Replaced everywhere type
+		Interfaces.C.Unsigned_Long
+	   with type 
+		Interfaces.Unsigned_32
+	   Unsigned_Long is 64 bits long in 64 bits archs,
+	   and inet_addr must be 32 bits long even in 64 bits archs.
+
+3.1
+===
+
+2011.10.25 jcenteno
+	   Changed Lower_Layer."="(Left, Right: Address_CA) to avoid raising i
+           Null_Address if an operand is Null.  Now returns True if both
+           operands are Null and False if only one operand is Null.
+
+3.0
+===
+
+2008.11.11 jcenteno&pheras [BUG, MAYOR]
+	   Fixed warning in concurrency.adb Mutex.Enter entry: first appearing
+	   with gnat-4.3, causing Program_Error with all Lower_Layer programs
+	   Changed Mutex.Enter calls in lower_layer-inet.adb, 
+	   lower_layer-inet-tcp.adb and lower_layer-inet-udp.adb.
+
+2008.11.11 jcenteno [MINOR]
+	   added VERSION file, set version at 3.0
+
+2007.11.26 jcenteno [MAYOR]
+	   in lower_layer-inet.adb and lower_layer_udp.adb 
+	   changed max buffer size from 5000 to 65535 - 28, to handle the 
+	   biggest possible udp datagram
+
+2007.11.26 jcenteno [MINOR]
+	   in lower_layer-inet.adb, changed Bind and Check_Dummy 
+	   Put_Exception_Error's turning them into debugging conditioned 
+	   Put_Line's, in order to avoid a forced stdout error message 
+	   impossible to catch/remove by user programs
+
+2007.11.26 jcenteno [MINOR]
+	   Fixed several Sending_Error exceptions when running in
+	   Ubuntu64, related to apoloval bugs fixed on 2006.03.27,
+	   in ada_sockets.adb and lower_layer-inet.adb
+
+2006.10.17 jcenteno [MINOR]
+	   Fixed several PROGRAM_ERROR exceptions when compiled
+	   with gnat-4.0 at Ubuntu Dapper (due to gnat bugs, probably)
+	     in lower_layer-inet.adb:546, changed from Data'Access
+		to Data'Unrestricted_Access
+	     in lower_layer_udp.adb:598 and 809, changed from Data
+		to Data.all'Access
+	   This changes are unnecessary with gnat-4.1 at Debian
+		
+2006.10.16 jcenteno [MINOR]
+	   Fixed a compilation warning about The_Socket not being
+	   initialized in lower_layer-inet.adb:352, lower_layer-inet.adb:379
+
+2006.03.27 jcenteno [BUG}
+	   In lower_layer_udp.adb, change the generation of random_delay 
+	   values to achieve real randomization
+
+2006.03.27 apoloval [BUG]
+	   Serveral fixes to ada_sockets.adb, c_sockets.ads, c_sockets-arch.ads
+	   to fix compilation/runtime errors in gnat-4.0 and/or Darwin/Mac OS X
+
+2006.03.27 jcenteno [BUG}
+	   In lower_layer_udp.adb, now a set_fault_percent of 0 really
+	   works as no faults at all	   
+
+2006.03.27 pheras [MAYOR] 
+	   In lower_layer_udp.adb, use a pool of
+	   buffers to store incoming messages instead a single one,
+	   discarding messages if all the buffers are full, instead of
+	   blocking
+
+2005.12.05 jcenteno [MINOR]
+	   Improved random delays generation in lower_layer_udp.adb,
+	   Delay_Buffer_Access.Add (needs further improvement)	
+
+2005.12.05 jcenteno [MAYOR]
+	   Now all Send subprograms DOES NOT RESET the Buffer
+
+2005.12.05 jcenteno [MINOR]
+	   Fixed compilation warning about Recv_Data not being
+	   initialized in lower_layer-inet-tcp-misc.adb:108
+
+2005.12.05 jcenteno [MINOR]
+	   Fixed compilation warning about From not being
+	   initialized in lower_layer-inet-udp.adb:270

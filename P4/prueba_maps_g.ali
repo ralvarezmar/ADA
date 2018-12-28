@@ -1,0 +1,151 @@
+V "GNAT Lib v4.8"
+M P W=b
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK
+
+U prueba_maps_g%b	prueba_maps_g.adb	edfe4a19 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.unchecked_deallocation%s
+W maps_g%s		maps_g.adb		maps_g.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-except.ads		20120716125141 10fcae55
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-numeri.ads		20080324174807 bb51c45a
+D a-nudira.ads		20100622172941 2fef2912
+D a-nudira.adb		20100622172941 e57ce22b
+D a-reatim.ads		20090409150019 63f07669
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20120426100351 3f91d4c5
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20130104124955 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-uncdea.ads		20070406091342 f15a5ed1
+D interfac.ads		20110906094621 129923ea
+D i-c.ads		20110801143639 5421119b
+D i-cstrea.ads		20130102105938 3286f6aa
+D maps_g.ads		20160603092524 bcfc5f34
+D maps_g.adb		20160604094612 52c5bf21
+D prueba_maps_g.adb	20160604094732 79111d2e
+D system.ads		20140416144300 bd760655
+D s-atacco.ads		20120515093410 4c36d12f
+D s-atocou.ads		20111104134501 4a9c6cb4
+D s-atocou.adb		20110926105433 c864ec10
+D s-conca2.ads		20090420091404 fbd0f2fc
+D s-crtl.ads		20130102105938 1ea48bce
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20111024091915 b95bb341
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-linux.ads		20110906091515 70c7cb45
+D s-maccod.ads		20110906094621 0fbb7bce
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20140416144301 d627f9dc
+D s-osinte.ads		20120309145048 938b6b03
+D s-parame.ads		20110830140625 b6e20cc0
+D s-pooglo.ads		20110804083314 542f33d0
+D s-rannum.ads		20100623054052 5eb33f0a
+D s-secsta.ads		20110830140625 eea35a36
+D s-soflin.ads		20120515094619 24c8153c
+D s-stache.ads		20090417130712 596fc1b4
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20130104124955 f78bcf95
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stopoo.ads		20111013103733 7b8fbeee
+D s-stposu.ads		20121005142121 ffeba1c5
+D s-stratt.ads		20100909123135 aedef97e
+D s-tasinf.ads		20120730151500 21316953
+D s-taspri.ads		20110927094500 15f617a8
+D s-taprop.ads		20111212143339 1dd2e1b6
+D s-taskin.ads		20121029113218 59e95256
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 24|1r6 2r6 3r6 7r24 8r24 20r7 21r7 22r7 23r7 28r7 34r10 41r7
+. 45r10 48r10 55r7
+X 7 a-numeri.ads
+16K13*Numerics 32e17 24|3r10
+X 8 a-nudira.ads
+44k22*Discrete_Random 73e33 24|3w19
+X 12 a-string.ads
+16K13*Strings 35e16 24|2r10 7r28
+X 14 a-strunb.ads
+76K21*Unbounded 489e26 24|2w18 7r36
+X 16 a-textio.ads
+49K13*Text_IO 471e16 24|1w10 8r28 20r11 21r11 22r11 23r11 28r11 34r14 41r11
+. 45r14 48r14 55r11
+166U14*New_Line 24|28s19 41s19 55s19
+263U14*Put_Line 24|20s19 21s19 22s19 23s19 29s12 34s22 42s12 45s22 48s22
+. 56s12
+X 22 maps_g.ads
+3+9 Key_Type 24|10r29
+4+9 Value_Type 24|11r32
+5V19 "="{boolean} 24|12r33
+7i4 Max{natural} 24|13r33
+8k9*Maps_G 64e11 24|4w6 10r21
+10R9 Map 24|17r34[10] 26r34[10] 37r37[10] 52r40[10] 62r17[10]
+12U14 Get 24|43s12[10]
+18X4 Full_Map 24|33r17[10]
+19U14 Put 24|30s12[10]
+23U14 Delete 24|57s12[10]
+28V13 Map_Length{natural} 24|22s47[10]
+34V13 First{integer} 24|18s26[10] 23s47[10]
+X 24 prueba_maps_g.adb
+6U11*prueba_maps_g 6b11 91l5 91t18
+7K11 ASU=7:36
+8K11 ATIO=8:28 29r7 42r7 56r7
+10K9 Maps[22|8] 17r29 18r21 22r42 23r42 26r29 30r7 33r12 37r32 43r7 52r35
+. 57r7 62r12
+17U14 Print_Map 17b14 17>25 24l8 24t17 31s7 46s10
+17r25 M{22|10R9[10]} 18r32 22r58 23r53
+18i7 C{natural}
+26U11 Do_Put 26b11 26=19 26>39 26>51 35l8 35t14 66s4 71s4 72s4 74s4 75s4
+. 76s4 77s4 80s4 81s4 82s4
+26r19 M{22|10R9[10]} 30m17 31r17
+26i39 K{natural} 29r47 30r20
+26i51 V{natural} 30r23
+37U14 Do_Get 37b14 37=22 50l8 50t14 70s4 79s4 89s4
+37r22 M{22|10R9[10]} 43r17 46r20
+38i7 V{natural} 43m20 45r56
+39b7 Success{boolean} 43m23 44r10
+52U14 Do_Delete 52b14 52=25 59l8 59t17 68s4 85s4 86s4
+52r25 M{22|10R9[10]} 57m20
+53b7 Success{boolean} 57m23
+62r4 A_Map{22|10R9[10]} 66m12 66r12 68m15 68r15 70m12 70r12 71m12 71r12 72m12
+. 72r12 74m12 74r12 75m12 75r12 76m12 76r12 77m12 77r12 79m12 79r12 80m12
+. 80r12 81m12 81r12 82m12 82r12 85m15 85r15 86m15 86r15 89m12 89r12
+X 47 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

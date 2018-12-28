@@ -1,0 +1,148 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R nnnnnnnnnnvnnnnnnnvnnvnnnvvnnnnnnnvnnnnnnvnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U words%b		words.adb		ee46a0bd NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.maps%s	a-strmap.adb		a-strmap.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+W word_lists%s		word_lists.adb		word_lists.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-comlin.ads		20100623092347 e0accaa5
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20101220072657 e684739b
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20140416172229 23e1f70b
+D s-conca3.ads		20090420091404 762a026a
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-valint.ads		20090409150019 48a52a3f
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D word_lists.ads	20151002110624 e408b21f
+D words.adb		20151007095548 2f5f94b7
+X 1 ada.ads
+16K9*Ada 19e8 39|3r6 4r6 5r6 7r6 8r6 9r6 12r29 13r30 14r29 21r35 38r50 56r17
+. 56r40 59r65 62r46 66r9 99r33 146r22
+X 4 a-comlin.ads
+38K13*Command_Line 139e21 39|5w10 14r33
+41V13*Argument_Count{natural} 39|114s24 114s50 118s16 122s19 133s19
+48V13*Argument{string} 39|119s58 123s58 125s24 129s27 134s58
+57V13*Command_Name{string} 39|143s52
+X 5 a-except.ads
+55K13*Exceptions 370e19 39|8w10
+X 8 a-ioexce.ads
+18K13*IO_Exceptions 30e22 39|7w10 62r50 146r26
+23X4*Name_Error 39|146r40
+26X4*End_Error 39|62r64
+X 10 a-string.ads
+16K13*Strings 35e16 39|4r10 9r10 12r33 38r54
+X 11 a-strmap.ads
+38K21*Maps 412e21 39|9w18 38r62
+47A9*Character_Set(boolean)
+99V13*To_Set{47A9} 39|38s67
+X 12 a-strunb.ads
+77K21*Unbounded 490e26 39|4w18 12r41
+80R9*Unbounded_String 474e14 39|15r22 20r39 23r39 24r39 32r35 54r42
+85V13*Length{natural} 39|42s59 44s59
+95V13*To_Unbounded_String{80R9} 39|59s45 87s48 92s48 97s48 119s34 123s34
+. 134s34
+101V13*To_String{string} 39|56s65
+243V13*Index{natural} 39|38s38
+397V13*Head{80R9} 39|40s47
+407V13*Tail{80R9} 39|42s44 44s44
+X 14 a-textio.ads
+49K13*Text_IO 472e16 39|3w10 13r34 21r39 56r21 56r44 59r69 66r13 99r37
+52P9*File_Type(370R9) 39|21r47
+53n23*In_File{53E9} 39|56r52
+93U14*Open 39|56s29
+99U14*Close 39|66s21
+243U14*Put 39|82s22
+254V13*Get_Line{string} 39|59s77
+257V13*Get_Line{string} 39|83s46 87s73 92s73 97s73
+264U14*Put_Line 39|76s22 77s22 78s22 79s22 80s22 81s22 86s38 89s38 91s38
+. 94s38 96s38 99s45 106s38 108s30 142s30 143s30 147s30
+X 38 word_lists.ads
+2K9*Word_lists 30e15 39|6w6 26r35 33r37 41r33 47r33 70r41 88r33 93r33 98r33
+. 101r33 103r33 121r17 126r25 127r25 128r25 130r25 136r17
+4R14*Cell 11e19
+5P14*Word_List_Type(4R14) 39|26r46 33r48 70r52
+15U19*Add_Word 39|41s44 47s44 88s44 126s36 130s36 136s28
+18U19*Delete_Word 39|93s44
+21U19*Search_Word 39|98s44
+25U19*Max_Word 39|103s44 121s28 128s36
+29U19*Print_All 39|101s44 127s36
+X 39 words.adb
+11U11*Words 11b11 148l5 148t10
+12K17 ASU=12:41 15r18 20r35 23r35 24r35 32r31 38r34 40r43 42r40 42r55 44r40
+. 44r55 54r38 56r61 59r41 87r44 92r44 97r44 119r30 123r30 134r30
+13K17 TI_A=13:34 76r17 77r17 78r17 79r17 80r17 81r17 82r17 83r41 86r33 87r68
+. 89r33 91r33 92r68 94r33 96r33 97r68 106r33 108r25 142r25 143r25 147r25
+14K17 ACL=14:33 114r20 114r46 118r12 119r54 122r15 123r54 125r20 129r23 133r15
+. 134r54 143r48
+16X9 Usage_Error 115r31 141r22
+20r9 File_Name{12|80R9} 119m17 120r30 123m17 124r30 134m17 135r30
+21p9 File{14|52P9} 56m34 59r86 66m27
+22b9 Finish{boolean} 57r27 63m41
+23r9 Line{12|80R9} 59m33 60m40
+24r9 Palabra{12|80R9} 40m33 41r69 46m33 47r69 87m33 88r69 92m33 93r72 97m33
+. 98r72 103m69 121m53 126r61 128m61 130r61 136r53
+25i9 Count{integer} 98m81 99r81 103m78 121m62 128m70
+26p9 Lista_Palabras{38|5P14} 60m46 121r37 126m45 127r46 128r45 130m45 131m30
+. 136m37 137m23
+32U11 Cortar 32b11 32=18 33<17 51l5 51t11 60s33
+32r18 Line{12|80R9} 38r44 40r52 42m33 42r49 42r66 44m33 44r49 44r66 46r44
+33p17 Lista_Palabras{38|5P14} 41m53 47m53
+34i9 Numero{integer} 38m25 39r28 40r57 42r74 43r31 45r31
+35b9 Cerrar{boolean} 37r27 48m33
+54U11 Leer_Fichero 54b11 54>24 67l5 67t17 120s17 124s17 135s17
+54r24 File_Name{12|80R9} 56r75
+70U11 Menu 70b11 70=17 110l5 110t9 131s25 137s17
+70p17 Lista_Palabras{38|5P14} 88m53 93m56 98r56 101r54 103r53
+72i9 Opcion{integer} 83m17 84r22
+73b9 Cerrar{boolean} 75r19 104m33
+

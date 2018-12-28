@@ -1,0 +1,106 @@
+V "GNAT Lib v4.8"
+P ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV SPARK
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U protected_ops%b	protected_ops.adb	93fc6290 OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.timing_events%s  a-rttiev.adb	a-rttiev.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+U protected_ops%s	protected_ops.ads	28b817ce EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20120716125141 10fcae55
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-reatim.ads		20090409150019 63f07669
+D a-rttiev.ads		20090409150019 22f35a33
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20130104124955 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20110906094621 129923ea
+D i-c.ads		20110801143639 5421119b
+D i-cstrea.ads		20130102105938 3286f6aa
+D protected_ops.ads	20160612161316 4b4861a7
+D protected_ops.adb	20160612161316 c22aacd0
+D system.ads		20140416144300 bd760655
+D s-atacco.ads		20120515093410 4c36d12f
+D s-crtl.ads		20130102105938 1ea48bce
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20111024091915 b95bb341
+D s-finroo.ads		20120426095924 4ff27390
+D s-linux.ads		20110906091515 70c7cb45
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20140416144301 d627f9dc
+D s-osinte.ads		20120309145048 938b6b03
+D s-parame.ads		20110830140625 b6e20cc0
+D s-pooglo.ads		20110804083314 542f33d0
+D s-soflin.ads		20120515094619 24c8153c
+D s-stache.ads		20090417130712 596fc1b4
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20130104124955 f78bcf95
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stopoo.ads		20111013103733 7b8fbeee
+D s-tasinf.ads		20120730151500 21316953
+D s-taspri.ads		20110927094500 15f617a8
+D s-taprop.ads		20111212143339 1dd2e1b6
+D s-taskin.ads		20121029113218 59e95256
+D s-taprob.ads		20110927094500 502249e3
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 14|1r6 15r58 15|1r6 2r6 5r24 6r26 30r58
+X 5 a-reatim.ads
+39K13*Real_Time 139e18 14|1w10 15r62 15|1r10 5r28 6r30 30r62
+41O9*Time 14|15r72 15|30r72 31r20
+X 6 a-rttiev.ads
+38K23*Timing_Events 81e32 15|1w20 6r40
+40R9*Timing_Event 75e14 15|12r51 17r51 29r14
+45U14*Set_Handler 15|35s13
+X 9 a-textio.ads
+49K13*Text_IO 471e16 15|2w10
+X 14 protected_ops.ads
+9K9*Protected_Ops 27l5 27e18 15|4b14 48l5 48t18
+13P9*Procedure_A 15r42 21r33 15|9r22 13r36 22r36 30r42 41r33
+15U14*Program_Timer_Procedure 15>39 15>55 15|30b14 39l8 39t31
+15p39 H{13P9} 15|30b39 33r26
+15o55 T{5|41O9} 15|30b55 37r10
+21U14*Protected_Call 21>30 15|41b14 44l8 44t22
+21p30 H{13P9} 15|41b30 43r25
+X 15 protected_ops.adb
+5K12 ART=5:28 31r16
+6K12 ARTTE=6:40 12r45 17r45 29r8 35r7
+9p4 Timed_Procedure{14|13P9} 19r10 33m7
+11w14 P 16b19 27l8 27t9 38r10 43r7
+12U17 Timer_Procedure 12=34 17b17 20l11 20t26 38r12
+12r34 TE{6|40R9} 17b34
+13U17 Call_Procedure 13>33 22b17 25l11 25t25 43s9
+13p33 H{14|13P9} 22b33 24r10
+29r4 TE{6|40R9} 36m10 36r10
+X 31 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
