@@ -1,4 +1,4 @@
-# Programación de Sistemas de Telecomunicación / Informática II
+# Programación de Sistemas de Telecomunicación
 
 # Práctica 2:
 
